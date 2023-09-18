@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "reviews",
+  "info": {
+    "singularName": "review",
+    "pluralName": "reviews",
+    "displayName": "Review",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "content": {
+      "type": "text"
+    },
+    "rating": {
+      "type": "integer",
+      "max": 10,
+      "min": 0
+    },
+    "movie": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::movie.movie",
+      "inversedBy": "reviews"
+    }
+  }
+}

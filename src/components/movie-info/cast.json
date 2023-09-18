@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_movie_info_casts",
+  "info": {
+    "displayName": "cast",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "role": {
+      "type": "enumeration",
+      "enum": [
+        "Director",
+        "Main actor",
+        "Supporting actor"
+      ]
+    }
+  }
+}

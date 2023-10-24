@@ -67,6 +67,9 @@
       "relation": "oneToMany",
       "target": "api::review.review",
       "mappedBy": "movie"
+    },
+    "titleOriginal": {
+      "type": "string"
     }
   }
 }

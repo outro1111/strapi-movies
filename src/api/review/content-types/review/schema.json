@@ -25,6 +25,12 @@
       "relation": "manyToOne",
       "target": "api::movie.movie",
       "inversedBy": "reviews"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "reviews"
     }
   }
 }

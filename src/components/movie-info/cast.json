@@ -2,7 +2,8 @@
   "collectionName": "components_movie_info_casts",
   "info": {
     "displayName": "cast",
-    "icon": "user"
+    "icon": "user",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -16,6 +17,16 @@
         "Main actor",
         "Supporting actor"
       ]
+    },
+    "photo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }

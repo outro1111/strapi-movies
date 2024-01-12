@@ -4,8 +4,6 @@
  * review controller
  */
 
-const { errors } = require('@strapi/utils');
-const { ApplicationError } = errors;
 const { createCoreController } = require('@strapi/strapi').factories;
 
 module.exports = createCoreController('api::review.review', ({ strapi }) => ({

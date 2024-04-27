@@ -22,7 +22,6 @@ module.exports = createCoreController('api::review.review', ({ strapi }) => ({
       if (existingReview.length > 0) { // 작성자가 쓴 리뷰가 있을 시
         ctx.response.status = 409; // 상태 코드를 409 Conflict로 설정
         return ctx.response.body = { error: 'already review' }; // 에러 메시지 return
-        // return { error: 'already review' }; // 에러 메시지 return 다른 방법
       } 
       const response = await super.create(ctx); // 중복 리뷰가 없을 시 리뷰 작성
       return response;
